@@ -102,23 +102,19 @@ class InternalConfig(ConfigParser):
 
         # [links]
         section = cp['links']
-        self.validators_hubble_link = section['validators_hubble_link']
-        self.validators_big_dipper_link = section['validators_big_dipper_link']
-        self.validators_stargazer_link = section['validators_stargazer_link']
-        self.validators_mintscan_link = section['validators_mintscan_link']
-        self.validators_lunie_link = section['validators_lunie_link']
+        self.validators_cashmaney_link= section['validators_cashmaney_link']
+        self.validators_puzzle_link = section['validators_puzzle_link']
+        self.validators_secretscan_link = section['validators_secretscan_link']
 
-        self.block_hubble_link_prefix = section['block_hubble_link_prefix']
-        self.block_big_dipper_link_prefix = section[
-            'block_big_dipper_link_prefix']
-        self.block_stargazer_link_prefix = section[
-            'block_stargazer_link_prefix']
-        self.block_mintscan_link_prefix = section['block_mintscan_link_prefix']
-        self.block_lunie_link_prefix = section['block_lunie_link_prefix']
+        self.block_cashmaney_link_prefix = section['block_cashmaney_link_prefix']
+        self.block_puzzle_link_prefix = section[
+            'block_puzzle_link_prefix']
+        self.block_secretscan_link_prefix = section[
+            'block_secretscan_link_prefix']
 
-        self.tx_hubble_link_prefix = section['tx_hubble_link_prefix']
-        self.tx_big_dipper_link_prefix = section['tx_big_dipper_link_prefix']
-        self.tx_mintscan_link_prefix = section['tx_mintscan_link_prefix']
+        self.tx_cashmaney_link_prefix = section['tx_cashmaney_link_prefix']
+        self.tx_puzzle_link_prefix = section['tx_puzzle_link_prefix']
+        self.tx_secretscan_link_prefix = section['tx_secretscan_link_prefix']
 
         self.github_releases_template = section['github_releases_template']
 
