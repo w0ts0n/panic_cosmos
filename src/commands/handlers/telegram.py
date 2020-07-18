@@ -350,16 +350,12 @@ class TelegramCommands(Commands):
         # Send list of links to validators
         update.message.reply_text(
             'Links to validators:\n'
-            '  Hubble: {}\n'
-            '  BigDipper: {}\n'
-            '  Stargazer: {}\n'
-            '  Mintscan: {}\n'
-            '  Lunie: {}'.format(
-                self._internal_conf.validators_hubble_link,
-                self._internal_conf.validators_big_dipper_link,
-                self._internal_conf.validators_stargazer_link,
-                self._internal_conf.validators_mintscan_link,
-                self._internal_conf.validators_lunie_link))
+            '  Cashmaney: {}\n'
+            '  Puzzle: {}\n'
+            '  Secretscan: {}\n'format(
+                self._internal_conf.validators_cashmaney_link,
+                self._internal_conf.validators_puzzle_link,
+                self._internal_conf.validators_secretscan_link))
 
     def _block_callback(self, update: Update, context: CallbackContext):
         self._logger.info('/block: update=%s, context=%s', update, context)
@@ -379,16 +375,12 @@ class TelegramCommands(Commands):
             height = int(message_parts[1])
             update.message.reply_text(
                 'Links to block:\n'
-                '  Hubble: {}{}\n'
-                '  BigDipper: {}{}\n'
-                '  Stargazer: {}{}\n'
-                '  Mintscan: {}{}\n'
-                '  Lunie: {}{}'.format(
-                    self._internal_conf.block_hubble_link_prefix, height,
-                    self._internal_conf.block_big_dipper_link_prefix, height,
-                    self._internal_conf.block_stargazer_link_prefix, height,
-                    self._internal_conf.block_mintscan_link_prefix, height,
-                    self._internal_conf.block_lunie_link_prefix, height))
+                '  Cashmaney: {}{}\n'
+                '  Puzzle: {}{}\n'
+                '  Secretscan: {}{}'.format(
+                    self._internal_conf.block_cashmaney_link_prefix, height,
+                    self._internal_conf.block_puzzle_link_prefix, height,
+                    self._internal_conf.block_secretscan_link_prefix, height))
         except ValueError:
             update.message.reply_text("I expected a block height.")
 
@@ -409,12 +401,12 @@ class TelegramCommands(Commands):
         tx_hash = message_parts[1]
         update.message.reply_text(
             'Links to transaction:\n'
-            '  Hubble: {}\n'
-            '  BigDipper: {}\n'
-            '  Mintscan: {}'.format(
-                self._internal_conf.tx_hubble_link_prefix + str(tx_hash),
-                self._internal_conf.tx_big_dipper_link_prefix + str(tx_hash),
-                self._internal_conf.tx_mintscan_link_prefix + str(tx_hash)))
+            '  Cashmaney: {}{}\n'
+            '  Puzzle: {}{}\n'
+            '  Secretscan: {}{}'.format(
+                self._internal_conf.tx_cashmaney_link_prefix + str(tx_hash),
+                self._internal_conf.tx_puzzle_link_prefix + str(tx_hash),
+                self._internal_conf.tx_secretscan_link_prefix + str(tx_hash)))
 
     def _help_callback(self, update: Update, context: CallbackContext):
         self._logger.info('/help: update=%s, context=%s', update, context)
