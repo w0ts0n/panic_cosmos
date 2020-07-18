@@ -1,7 +1,7 @@
 # P.A.N.I.C FOR SECRET NETWORK NODE RUNNERS
 
 ### Notes: 
-This is runing and tested by me on Ubuntu 20.04 LTS with Reddis and Telegram Bot enabled
+This is tested by me on Ubuntu 20.04 LTS with Reddis and Telegram Bot enabled
 
 ## Install Instruction For Secret Node Runners
 ```
@@ -84,7 +84,6 @@ pipenv --version
     If you want you can Add Repositorys to monitor or just set them to false
 
     Then rename it to user_config_repos.ini using
-
         ``` mv example_user_config_repos.ini user_config_repos.ini ```
 
  ### Build
