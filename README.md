@@ -1,7 +1,7 @@
 # P.A.N.I.C FOR SECRET NETWORK NODE RUNNERS
 
 ### Notes: 
-This is tested by me on Ubuntu 20.04 LTS with Reddis and Telegram Bot enabled
+This is tested by me on Ubuntu 20.04 LTS with Redis and Telegram Bot enabled
 
 ## Install Instruction For Secret Node Runners
 ```
@@ -39,7 +39,7 @@ pipenv --version
  >https://github.com/mohammedpatla/panic_cosmos/blob/master/doc/INSTALL_TELEGRAM.md
 
 ### Install Reddis for DB
- Follor the instructions here to install redis DB on your server
+ Follow the instructions here to install redis DB on your server
  >https://github.com/mohammedpatla/panic_cosmos/blob/master/doc/INSTALL_REDIS.md
 
 ## Setting up P.A.N.I.C.
@@ -103,7 +103,7 @@ If you want to run this as a Linux Service you can find it in the original detai
 
  ### Finishing up
 If Everything was set right then you should get this output:
-    ```
+
     Enabled alerting channels (general): ConsoleChannel, LogChannel, TelegramChannel
     Enabled alerting channels (periodic alive reminder): ConsoleChannel, LogChannel, TelegramChannel
     Trying to connect to <your-IP>/status
@@ -114,7 +114,6 @@ If Everything was set right then you should get this output:
     Network monitor (secret-1) started with 1 validator(s) and 1 full node(s).
     Telegram commands started.
     Periodic alive reminder started.
-    ```
 
 ### Advanced Configurations
 [Advanced](https://github.com/mohammedpatla/panic_cosmos/blob/master/doc/INSTALL_AND_RUN.md#advanced-configuration)
