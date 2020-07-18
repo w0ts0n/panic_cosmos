@@ -352,7 +352,7 @@ class TelegramCommands(Commands):
             'Links to validators:\n'
             '  Cashmaney: {}\n'
             '  Puzzle: {}\n'
-            '  Secretscan: {}\n'format(
+            '  Secretscan: {}'.format(
                 self._internal_conf.validators_cashmaney_link,
                 self._internal_conf.validators_puzzle_link,
                 self._internal_conf.validators_secretscan_link))
