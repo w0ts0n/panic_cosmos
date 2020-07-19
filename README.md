@@ -131,7 +131,7 @@ If Everything was set right then you should get this output:
 - Modified By : Mohammed Patla
 
 ## Donation :
-SCRT - secret1jy2mh7pje6lq9hdnhwge2s2hgtr0tr848e7ymm
+SCRT love - secret1rfnmcuwzf3zn7r025j9zr3ncc7mt9ge5tcsd5h
 
 BTC - bc1qrf32mrehryusdszuzxjrcd7nc6sqh5x7hchhrc
 
