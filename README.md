@@ -4,7 +4,7 @@
 This is tested by me on Ubuntu 20.04 LTS with Redis and Telegram Bot enabled
 
 ### Prerequisites
-You will need to run this on an indempendent server (VPS) so it can monitor your node!!
+You will need to run this on an independent server (VPS) so it can monitor your node!
 
 ## Install Instruction For Secret Node Runners
 ```
